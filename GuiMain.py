@@ -1,5 +1,7 @@
 import tkinter
+from tkinter import filedialog
 import MouseAction
+import ImageProcess
 
 # Set entry text
 def setEntry(entry, msg):
@@ -8,8 +10,8 @@ def setEntry(entry, msg):
     entry.insert(0, msg)
     entry.configure(state='readonly')
 
+# Create a new window
 windowMain = tkinter.Tk()
-
 windowMain.title("ebook")
 # windowMain.geometry("600x400")  # window size and position
 windowMain.resizable(False, False)
@@ -59,11 +61,42 @@ lbSaveLoc = tkinter.Label(windowMain, text = "Save location: ")
 lbSaveLoc.grid(row=3, column=0)
 entSaveLoc = tkinter.Entry(windowMain, width=50, state="readonly")
 entSaveLoc.grid(row=3, column=1, columnspan=4)
-btnSaveLoc = tkinter.Button(windowMain, width=10, text = "Set")
+def btnSaveLoc():
+    fileDir = filedialog.askdirectory()
+    print("directory is selected: ", fileDir)
+    setEntry(entSaveLoc, fileDir)
+btnSaveLoc = tkinter.Button(windowMain, width=10, text = "Search", command=btnSaveLoc)
 btnSaveLoc.grid(row=3, column=5)
 
 # about run button
-btnRun = tkinter.Button(windowMain, width=20, text = "Run")
+def btnRun():
+    pageNumStr = entPageNum.get()
+    capArea1Str = entGrabArea1.get()
+    capArea2Str = entGrabArea2.get()
+    nextPageStr = entNextPagePos.get()
+    saveLocStr = entSaveLoc.get()
+    #check is all items valid
+    if pageNumStr == "" or not(pageNumStr.isdigit()):
+        return
+    if capArea1Str == "":
+        return
+    if capArea2Str == "":
+        return
+    if nextPageStr == "":
+        return
+    if saveLocStr == "":
+        return
+    pageNum = int(pageNumStr)
+    capArea1 = (int(capArea1Str.split(", ")[0]), int(capArea1Str.split(", ")[1]))
+    capArea2 = (int(capArea2Str.split(", ")[0]), int(capArea2Str.split(", ")[1]))
+    nextPage = (int(nextPageStr.split(", ")[0]), int(nextPageStr.split(", ")[1]))
+
+    for i in range(pageNum):
+        ImageProcess.grabImg(capArea1[0], capArea1[1], capArea2[0], capArea2[1], saveLocStr, 'file'+str(i)+".png")
+        MouseAction.mouseClick(nextPage[0], nextPage[1])
+
+
+btnRun = tkinter.Button(windowMain, width=20, text = "Run", command=btnRun)
 btnRun.grid(row=4, column=2, columnspan=2)
 
 

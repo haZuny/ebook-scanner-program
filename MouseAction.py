@@ -10,3 +10,7 @@ def returnMousePos():
         if mouse.is_pressed("left"):
             print("Mouse clicked at: ", pyautogui.position())
             return (pyautogui.position().x, pyautogui.position().y)
+
+def mouseClick(posX, posY):
+    pyautogui.moveTo(posX, posY)    # move mouse
+    pyautogui.click(button="left")  # click mouse
