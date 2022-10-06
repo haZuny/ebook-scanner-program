@@ -2,6 +2,7 @@ import tkinter
 from tkinter import filedialog
 import MouseAction
 import ImageProcess
+import time
 
 # Set entry text
 def setEntry(entry, msg):
@@ -94,6 +95,7 @@ def btnRun():
     for i in range(pageNum):
         ImageProcess.grabImg(capArea1[0], capArea1[1], capArea2[0], capArea2[1], saveLocStr, 'file'+str(i)+".png")
         MouseAction.mouseClick(nextPage[0], nextPage[1])
+        time.sleep(1)
 
 
 btnRun = tkinter.Button(windowMain, width=20, text = "Run", command=btnRun)
