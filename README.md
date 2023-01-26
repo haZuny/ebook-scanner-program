@@ -1,16 +1,22 @@
-# ebook_scanner
+![ebook scaner](https://user-images.githubusercontent.com/64102831/214788758-28cc6c55-c012-4fb2-b78d-9ad60ecd0705.PNG)
+
+# ebook scanner
+
 알라딘 전자책 스캔을 위해 만든 프로그램입니다.
 캡처가 허용되는 전자책 뷰어라면 아마 사용 가능할것같습니다.
 
-#Python 프로그램
+# 개발 환경
 
-#필요 모듈:
-pyautogui (pip3 install pyautogui)
-Pillow (pip3 install Pillow)
-mouse (pip3 install mouse)
+언어:
+- Python3
+
+필요 모듈:
+- pyautogui (pip3 install pyautogui)
+- Pillow (pip3 install Pillow)
+- mouse (pip3 install mouse)
 
 
-#사용법:
+# 사용법
 1. 프로그램 실행(GuiMain.py)
 2. 스캔할 책의 페이지 수 입력 (page number)
 3. 스캔할 이미지 영역 선택(1_왼쪽 상단, 2_ 오른쪽 하단)(Capture area)
