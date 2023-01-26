@@ -8,7 +8,7 @@
 
 <br>
 
-# ebook scanner
+# 📖ebook scanner
 
 알라딘 전자책 스캔을 위해 만든 프로그램입니다.
 
