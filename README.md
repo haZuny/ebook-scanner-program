@@ -7,7 +7,7 @@
 # 개발 환경
 
 언어:
-- Python3
+* Python3
 
 필요 모듈:
 - pyautogui (pip3 install pyautogui)
