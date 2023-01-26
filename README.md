@@ -8,7 +8,7 @@
 
 <br>
 
-# 📖ebook scanner
+# 📖 ebook scanner
 
 알라딘 전자책 스캔을 위해 만든 프로그램입니다.
 
@@ -17,7 +17,7 @@
 <br>
 <br>
 
-# 💻개발 환경
+# 💻 개발 환경
 
 #### 개발 언어
 * Python3
@@ -30,7 +30,7 @@
 <br>
 <br>
 
-# ❓How to use?
+# ❓ How to use?
 ![ebook scaner](https://user-images.githubusercontent.com/64102831/214788758-28cc6c55-c012-4fb2-b78d-9ad60ecd0705.PNG)
 1. 프로그램 실행(GuiMain.py)
 2. 스캔할 책의 페이지 수 입력 (page number)
