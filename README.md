@@ -8,6 +8,9 @@
 
 캡처가 허용되는 전자책 뷰어라면 아마 사용 가능할것같습니다.
 
+<br>
+<br>
+
 # 개발 환경
 
 #### 개발 언어
@@ -18,6 +21,8 @@
 - Pillow (pip3 install Pillow)
 - mouse (pip3 install mouse)
 
+<br>
+<br>
 
 # How to use?
 ![ebook scaner](https://user-images.githubusercontent.com/64102831/214788758-28cc6c55-c012-4fb2-b78d-9ad60ecd0705.PNG)
