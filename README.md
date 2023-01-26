@@ -10,16 +10,16 @@
 
 # 개발 환경
 
-언어:
+#### 개발 언어
 * Python3
 
-필요 모듈:
+#### 필요 모듈
 - pyautogui (pip3 install pyautogui)
 - Pillow (pip3 install Pillow)
 - mouse (pip3 install mouse)
 
 
-# 사용법
+# How to use?
 ![ebook scaner](https://user-images.githubusercontent.com/64102831/214788758-28cc6c55-c012-4fb2-b78d-9ad60ecd0705.PNG)
 1. 프로그램 실행(GuiMain.py)
 2. 스캔할 책의 페이지 수 입력 (page number)
