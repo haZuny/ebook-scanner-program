@@ -16,7 +16,7 @@
 
 캡처가 허용되는 전자책 뷰어라면 아마 사용 가능할것같습니다.
 
-[실행파일 다운로드]https://github.com/haZuny/ebook-scanner-program/raw/master/ebook%20Scanner(%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC).exe
+[실행파일 다운로드](https://github.com/haZuny/ebook-scanner-program/raw/master/ebook%20Scanner(%EC%8B%A4%ED%96%89%ED%8C%8C%EC%9D%BC).exe)
 
 <br>
 <br>
